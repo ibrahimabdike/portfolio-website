@@ -5,15 +5,35 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
 
 .navbar{
     position: fixed;
     width: 100%;
-    background: red;
+    padding: 15px 0;
+    background: blue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
 }
-.navbar .menu li a {
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li a{
+    display: block;
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
 }
 
 .navbar .logo a{
